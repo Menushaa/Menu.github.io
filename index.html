@@ -2,60 +2,123 @@
 <html>
     <head>
         <title>Personal Website</title>
-        <style>
-            body{
-                background-image: url(gr04.jpg);
-                background-repeat: no-repeat;
-                background-attachment: fixed;
-                background-size: cover;
-            }
-            .first{
-                overflow: hidden;
-            }
-            .first a{
-                float:left;
-                color: rgb(3, 3, 56);
-                text-align: center;
-                padding: 14px 16px ;
-                text-decoration: none;
-                font-size: 16px;
-            }
-            .menu{
-                list-style: none;
-                padding: 0%;
-            }
-            .first a:hover{
-                background-color: rgb(224, 209, 209);
-                color: black;
-            }
-            .first a.active{
-                background-color: rgb(6, 6, 82);
-                color: white;
-            }
-            h1{
-                margin-left: 10%;
-                margin-top: 10%;
-                font-family: Lucida Calligraphy;
-                color: rgb(5, 4, 78);
-            }
-            p{
-                color: rgb(33, 10, 233);
-                font-size: 28px;
-                font-family: forte;
-            }
-
-        </style>
+        <link rel="stylesheet" href="index.css">
     </head>
     <body>
-        <div class="first">
-            <ul class="menu">
-                <li> <a href="#Home" class="active"><b>Home</b></a></li>
-                <li> <a href="#personalinfo"><b>About Me</b></a></li>
-                <li> <a href="#contact" class="a"><b>Contact Details</b></a></li>
-            </ul>
+        <div class="main" id="s1">
+            <div class="first">
+                <ul class="menu">
+                    <li> <a href="#s1" class="active"><b>Home</b></a></li>
+                    <li> <a href="#s2"><b>About Me</b></a></li>
+                    <li> <a href="#s3" class="a"><b>Contact Details</b></a></li>
+                </ul>
+            </div>
+            <h1>Hi!!!<br>I'm Menushaa Vijayaraj</h1>
+            <p>I am an Undergraduate at University Of Moratuwa in ITM (Bsc.Hons)</p>
         </div>
-        <h1>Hi!!!<br>I'm Menushaa Vijayaraj</h1>
-        <p>I am an Undergraduate at University Of Moratuwa in ITM (Bsc.Hons)</p>
-       
+        <div class="main" id="s2">
+            <h1>About Me</h1>
+            <h2>My Information</h2>
+            <ul>
+                <li>Name: Vijayaraj Menushaa</li>
+                <li>From: Trincomalee</li>
+                <li>Studied at: T/Sri Shanmuga Hindu Ladies College</li>
+            </ul>
+            <br><br>
+            <div>
+                <table>
+                    <h2>G.C.E Advance Level[Commerce Stream]</h2>
+                    <tr>
+                        <th>Subject</th>
+                        <th>Grade</th>
+                    </tr>
+                    <tr>
+                        <td>ICT</td>
+                        <td>A</td>
+                    </tr>
+                    <tr>
+                        <td>Accounting</td>
+                        <td>A</td>
+                    </tr>
+                    <tr>
+                        <td>Business Studies</td>
+                        <td>C</td>
+                    </tr>
+                </table>
+                <br>
+                <table>
+                    <h2>G.C.E Ordinery Level</h2>
+                    <tr>
+                        <th>Subject</th>
+                        <th>Grade</th>
+                    </tr>
+                    <tr>
+                        <td>Saivaneri</td>
+                        <td>A</td>
+                    </tr>
+                    <tr>
+                        <td>Tamil</td>
+                        <td>A</td>
+                    </tr>
+                    <tr>
+                        <td>Mathematics</td>
+                        <td>A</td>
+                    </tr>
+                    <tr>
+                        <td>Science</td>
+                        <td>B</td>
+                    </tr>
+                    <tr>
+                        <td>History</td>
+                        <td>B</td>
+                    </tr>
+                    <tr>
+                        <td>English</td>
+                        <td>C</td>
+                    </tr>
+                    <tr>
+                        <td>Tamil.Lit</td>
+                        <td>A</td>
+                    </tr>
+                    <tr>
+                        <td>ICT</td>
+                        <td>A</td>
+                    </tr>
+                    <tr>
+                        <td>Commerce</td>
+                        <td>B</td>
+                    </tr>
+                </table>
+            </div>
+        </div>
+
+        <div class="all" id="s3">
+            <div class="size">
+                <div class="row"></div>
+                <div class="contact-left">
+                    <h1 class="sub">Contact Me</h1>
+                    <p><i class="fa-solid fa-paper-plane"></i>menushaa@gmail.com</p>
+                    <p><i class="fa-regular fa-square-phone"></i>0770101012</p>
+                    <div class="icon">
+                        <a href="https://www.facebook.com/"><i class="fa-brands fa-facebook"></i></a>
+                        <a href="https://twitter.com/?lang=en"><i class="fa-brands fa-twitter-squre"></i></a>
+                        <a href=""><i class="fa-brands instagram"></i></a>
+                        <a href="https://www.linkedin.com/"><i class="fa-brands fa-linkedin"></i></a>
+                    </div>
+                    <a href="btn btn2">Download CV</a>
+                </div>
+                <div class="contact-right">
+
+                </div>
+            <form>
+                <input type="text" name="name" placeholder="Name" required><br>
+                <input type="email" name="email" id="email" placeholder="Email" required><br>
+                <input type="text" name="subject" placeholder="Subject"><br>
+                <textarea name="details" placeholder="Message" style="height:200px;"></textarea><br>
+                <input type="submit" value="Submit">
+            </form>
+        
+        </div>    
+        </div>
     </body>
 </html>
